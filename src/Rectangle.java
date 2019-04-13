@@ -6,6 +6,8 @@ public class Rectangle extends Shape {
 
     @Override
     public void fill() {
-        // TODO
+        for (int xPixel = 0; xPixel < ; xPixel++) {
+
+        }
     }
 }
