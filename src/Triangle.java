@@ -10,6 +10,25 @@ public class Triangle extends Shape {
 
     @Override
     public void fill() {
+    boolean widthIsEven;
+    int pixelsInMiddle;
+    double pixelsGrowthPerLine;
+    double thisLineGrowthAsDouble;
+    int thisLineGrowthAsInt;
+    int numberOfPixels;
+    int numberOfEmpty;
+
+    widthIsEven = SIZEX % 2 == 0;
+
+    if (widthIsEven) {
+        pixelsInMiddle = 2;
+    } else {
+        pixelsInMiddle = 1;
+    }
+
+    pixelsGrowthPerLine = (double) (SIZEX - pixelsInMiddle) / (SIZEY - 1);
+
+    for (int lineNumber = 1; lineNumber <= SIZEY; lineNumber++) {
 
 //
 //                    for (int xPixel = 0; xPixel < SIZEX; xPixel++) {
@@ -27,24 +46,24 @@ public class Triangle extends Shape {
 //
 //
 //                                clearPixel(xPixel, yPixel);
-        int xPixel;
-        int yPixel;
-
-        for (yPixel = 1; yPixel < 7 ; yPixel++) {
-
-            for (xPixel = 1 ; xPixel < 2 * 7  -1; xPixel++) {
-
-                if (xPixel > 7 - (yPixel - 1) && xPixel < 7 + (yPixel - 1)) {
-
-                    fillPixel(xPixel, yPixel);
-
-                }else{
-
-
-
-                    clearPixel(xPixel, yPixel);
-
-
+//        int xPixel;
+//       int yPixel;
+//
+//       for (yPixel = 1; yPixel < 7 ; yPixel++) {
+//
+//            for (xPixel = 1 ; xPixel < 2 * 7  -1; xPixel++) {
+//
+ //               if (xPixel > 7 - (yPixel - 1) && xPixel < 7 + (yPixel - 1)) {
+//
+ //                   fillPixel(xPixel, yPixel);
+//
+//                }else{
+//
+//
+//
+//                    clearPixel(xPixel, yPixel);
+//
+//
         /*for (xPixel = 0; xPixel < SIZEX; xPixel++) {
 
             for (yPixel = 0; yPixel < SIZEY; yPixel++) {
@@ -67,8 +86,6 @@ public class Triangle extends Shape {
                         clearPixel(xPixel, yPixel);*/
                 }
             }
-
-        }}}
 
 
 
