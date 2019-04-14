@@ -1,4 +1,5 @@
 import java.sql.SQLOutput;
+import java.util.concurrent.TransferQueue;
 
 public class ConsoleDrawing {
     public static void main(String[] args) {
@@ -13,6 +14,8 @@ public class ConsoleDrawing {
 
         Triangle myTriangle = new Triangle(15, 7);
        //System.out.print(myTriangle);
+
+//        System.out.print(myRectangle + "   " + myOval + "   " + myTriangle); alles op een lijn (failed)
 
 //        System.out.println();
 //        System.out.println("Opdracht 2-3");
