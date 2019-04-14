@@ -6,13 +6,13 @@ public class ConsoleDrawing {
         System.out.println();
 
         Rectangle myRectangle = new Rectangle(15, 7);
-        System.out.println(myRectangle);
+        //System.out.print(myRectangle);
 
         Oval myOval = new Oval(15, 7);
-        System.out.println(myOval);
+        //System.out.print(myOval);
 
         Triangle myTriangle = new Triangle(15, 7);
-        System.out.println(myTriangle);
+       //System.out.print(myTriangle);
 
 //        System.out.println();
 //        System.out.println("Opdracht 2-3");
