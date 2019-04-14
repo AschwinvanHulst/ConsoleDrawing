@@ -1,4 +1,4 @@
-public abstract class Shape extends PixelGrid {
+public abstract class Shape  {
     private String pixels[][];
     protected final int SIZEX;
     protected final int SIZEY;
